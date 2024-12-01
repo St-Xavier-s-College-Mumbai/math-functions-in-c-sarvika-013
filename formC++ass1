@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+    string b,c,name;
+    cout<<"enter name: ";
+    cin>>name;
+    cout<<"enter number: ";
+    cin>>b;g++
+    
+    while(b.length()!=10){      
+        cout<<"invalid input! must contain 10 digits\n";
+         cout<<"enter number: ";
+        cin>>b;
+    }
+    cout<<"enter email: ";
+    cin>>c;
+    while(c.find('@')==string::npos){
+        cout<<"invalid input! @ charchter needs to be included\n";
+        cout<<"enter email: ";
+        cin>>c;
+    }
+    cout<<"information stored successfully!\n";
+    cout<<"Name: "<< name<< endl;
+    cout<<"contact no. "<<b<< endl;
+    cout<<"email: "<<c<<endl;
+
+    return 0;
+}
